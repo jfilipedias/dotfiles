@@ -11,9 +11,8 @@ git clone git@github.com:jfilipedias/dotfiles.git "$HOME/.dotfiles" --depth=1
 Run the following command to make the symbolic links:
 
 ```sh
-ls -s ~/.dotfiles/.gitconfig ~/.gitconfig
-
-ls -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ```
 
 
