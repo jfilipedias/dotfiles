@@ -44,6 +44,8 @@ git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
 
+Set `ZSH_THEME="spaceship"`  in your `.zshrc`.
+
 ### Node
 
 Install nvm:
