@@ -19,9 +19,16 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ## Setups
 
 ### Shell
-Install zsh: 
+Install zsh on Ubuntu: 
 ```sh
 sudo apt install zsh
+sudo chsh -s $(which zsh)
+```
+
+Install zsh on Fedora: 
+```sh
+sudo dnf install zsh
+sudo dnf install utils-linux-user
 sudo chsh -s $(which zsh)
 ```
 
