@@ -58,6 +58,11 @@ Install latest stable version of node:
 nvm install --lts
 ```
 
+Install pnpm:
+```sh
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+```
+
 Install yarn:
 ```sh
 npm install -g yarn
