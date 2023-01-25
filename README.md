@@ -67,7 +67,7 @@ npm install -g yarn
 ### Fira Code
 Install on Ubuntu:
 ```sh
-sudo apt install fira-code-fonts
+sudo apt install fonts-firacode
 ```
 
 Install on fedora:
