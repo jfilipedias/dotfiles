@@ -12,50 +12,40 @@ Run the following command to make the symbolic links:
 
 ```sh
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/.config.fish ~/.config/fish/config.fish
 ```
 
 
 ## Setups
 
 ### Shell
-Install zsh on Ubuntu: 
+Install fish on Ubuntu: 
 ```sh
-sudo apt install zsh
-sudo chsh -s $(which zsh)
+sudo apt install fish
+chsh -s $(which fish)
 ```
 
 Install zsh on Fedora: 
 ```sh
 sudo dnf install zsh
 sudo dnf install utils-linux-user
-sudo chsh -s $(which zsh)
+chsh -s $(which fish)
 ```
 
-Install oh-my-zsh:
+Install starship:
 ```sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -sS https://starship.rs/install.sh | sh
 ```
-
-Adds the spaceship theme to oh-my-zsh:
-```sh
-git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
-
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-```
-
-Set `ZSH_THEME="spaceship"`  in your `.zshrc`.
-
 ### Node
 
-Install nvm:
+Install fnm:
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+curl -fsSL https://fnm.vercel.app/install | bash
 ```
 
 Install latest stable version of node:
 ```sh
-nvm install --lts
+fnm install --lts
 ```
 
 Install pnpm:
